@@ -3,7 +3,7 @@ body {
     font-size: 17px;
     line-height: 1.5294717647;
     font-weight: 400;
-    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .xian {
@@ -22,7 +22,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: saturate(180%) blur(20px);
     transition: background 0.5s;
 }
@@ -60,7 +60,8 @@ body {
     background-image: url(https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/bag/image_large.svg);
 }
 
-.lei span,.lei .svg {
+.lei span,
+.lei .svg {
     height: 44px;
     padding: 0 10px;
     color: #f5f5f7;
@@ -89,7 +90,7 @@ body {
     align-items: center;
 }
 
-.xiaoLei >* {
+.xiaoLei>* {
     padding: 0 16px;
     transition: opacity 0.5s;
 }
@@ -117,22 +118,22 @@ body {
     transition: transform 0.5s;
 }
 
-.S{
+.S {
     position: absolute;
     top: 11px;
 }
 
-.X{
+.X {
     position: absolute;
     bottom: 10.65px;
     border-bottom: 1.5px solid rgb(194, 192, 192);
 }
 
-.active .S{
+.active .S {
     transform: rotate(-45deg);
 }
 
-.active .X{
+.active .X {
     transform: rotate(45deg);
 }
 
@@ -151,7 +152,7 @@ body {
 .active ul {
     width: 584px;
     color: white;
-    list-style-type:none;
+    list-style-type: none;
     margin: 50px auto 0 auto;
     padding: 0;
 }
@@ -167,7 +168,7 @@ body {
     transition: opacity 0.5s;
 }
 
-.active li:nth-child(7){
+.active li:nth-child(7) {
     border: none;
     color: rgb(136, 133, 133);
     opacity: 1;
@@ -177,6 +178,11 @@ body {
     opacity: 1;
 }
 
+.maiBao {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
 .jiao {
     width: 10px;
@@ -189,12 +195,6 @@ body {
     position: absolute;
     left: 12;
     top: 44;
-}
-
-.maiBao {
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 .liBao {
@@ -219,7 +219,6 @@ body {
     letter-spacing: -0.016em;
 }
 
-
 .liBao ul {
     color: #06c;
     width: 246px;
@@ -237,25 +236,24 @@ body {
 }
 
 .liBao ul li:nth-child(1) {
-    background-image: none,url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/bag.svg);
+    background-image: none, url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/bag.svg);
 }
 
 .liBao ul li:nth-child(2) {
-    background-image: none,url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/favorites.svg);
+    background-image: none, url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/favorites.svg);
 }
 
 .liBao ul li:nth-child(3) {
-    background-image: none,url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/orders.svg);
+    background-image: none, url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/orders.svg);
 }
 
 .liBao ul li:nth-child(4) {
-    background-image: none,url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/account.svg);
+    background-image: none, url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/account.svg);
 }
 
 .liBao ul li:nth-child(5) {
-    background-image: none,url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/signIn.svg);
+    background-image: none, url(https://www.apple.com/ac/globalnav/5/en_US/assets/ac-store/signIn.svg);
 }
-
 
 .maiBao .zhuangBao {
     display: none;
@@ -265,72 +263,64 @@ body {
     display: block;
 }
 
-
-
-@media only screen and (max-width: 1260px){
+@media only screen and (max-width: 1260px) {
     .liBao {
         position: fixed;
         right: 0;
     }
 }
 
-    .xiaoLei .mai {
-        height: 26px;
-        cursor: pointer;
-        opacity: 0.8;
-        transition: opacity 0.5s;
-    }
+.xiaoLei .mai {
+    height: 26px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
 
-    .xiaoLei .mai:hover {
-        opacity: 1;
-    }
+.xiaoLei .mai:hover {
+    opacity: 1;
+}
 
-    .xiaoLei .guoBiao {
-        height: 26px;
-        cursor: pointer;
-        opacity: 0.8;
-        transition: opacity 0.5s;
-    }
+.xiaoLei .guoBiao {
+    height: 26px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
 
-    .xiaoLei .guoBiao:hover {
-        opacity: 1;
-    }
+.xiaoLei .guoBiao:hover {
+    opacity: 1;
+}
 
-@media only screen and (max-width: 758px){
+@media only screen and (max-width: 758px) {
     .libao {
         top: 47;
         width: 100%;
         border-radius: 0;
+        border-bottom: 1px solid#dedede;
     }
-
     .jiao {
         top: 30;
         left: 18;
     }
-
     .liBao div {
         padding-left: 48px;
         padding-right: 48px;
         width: calc(100% - 96px);
     }
-
     .liBao ul {
         padding: 0 48px;
         width: calc(100% - 96px);
     }
-
     .liBao ul li {
         width: calc(100% - 56px);
     }
-
 }
 
 
-
-
-
 /* 中间搜索 */
-.li{
+
+.li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -340,7 +330,7 @@ body {
 .li h1 {
     font-size: 48px;
     font-weight: 500;
-    margin: 32px 0 0 0 ;
+    margin: 32px 0 0 0;
 }
 
 .zhong {
@@ -384,46 +374,37 @@ body {
     border: 1px solid #bbb;
 }
 
-
 .xiangGuan {
     background-color: white;
     width: 100%;
     height: 100px;
 }
 
-
-
-
-@media only screen and (max-width: 758px){
-    .lei { 
+@media only screen and (max-width: 758px) {
+    .lei {
         display: none;
     }
-
     .xiaoLei {
         display: flex;
     }
-
     .active .zhong {
         position: absolute;
         top: 40px;
         width: 584px;
         margin: 0 100px;
     }
-    
     .active .zhong .shou {
-        background-color:#19191a;
+        background-color: #19191a;
         height: 34px;
         width: 34px;
         left: 2px;
-    } 
-
+    }
     .active .zhong .shou svg {
         width: 19;
     }
-    
     .active .zhong .shuRu {
         background-color: #19191a;
-        border:#19191a;
+        border: #19191a;
         color: white;
         font-size: 1.1875rem;
         width: 584px;
@@ -431,54 +412,46 @@ body {
         left: 1px;
         padding-left: 36px;
     }
-
     .active .option {
         height: 100vh;
     }
-
-    
     .active .head {
         background: black;
         backdrop-filter: saturate(0%) blur(0px);
         transition: background 0.5s;
     }
-    
     .active .head .xiaoLei .maiBao {
         transition: opacity 0.5s;
         opacity: 0;
         cursor: auto;
     }
-    
 }
 
-@media only screen and (max-width: 685px){
+@media only screen and (max-width: 685px) {
     .active ul {
         width: calc(100% - 80px);
         color: white;
-        list-style-type:none;
+        list-style-type: none;
         margin: 50px 0 0 0;
         padding: 0 40px;
     }
-
 }
 
-@media only screen and (max-width: 627px){
+@media only screen and (max-width: 627px) {
     .active .zhong {
         position: absolute;
         top: 40px;
         width: calc(100% - 20px);
         margin: 0 10px;
     }
-    
     .active .zhong .shou {
-        background-color:#19191a;
+        background-color: #19191a;
         height: 34px;
         width: 34px;
-    } 
-    
+    }
     .active .zhong .shuRu {
         background-color: #19191a;
-        border:#19191a;
+        border: #19191a;
         color: white;
         font-size: 1.1875rem;
         width: calc(106% - 34px);
@@ -488,56 +461,41 @@ body {
     }
 }
 
-@media only screen and (max-width: 735px){
+@media only screen and (max-width: 735px) {
     .shang {
         height: 278px;
         margin-bottom: 132px;
     }
-
     .li {
         height: 96px;
         margin-top: 267px;
     }
-
     .li h1 {
         margin: 0;
         font-size: 31px;
         text-align: center;
     }
-
     .zhong {
         width: 88%;
-        margin: 18px 6% 0 6% ;
+        margin: 40px 6% 0 6%;
     }
-
-    
-
     .shou {
         height: 34px;
         left: 1px;
     }
-
     .shou svg {
         width: 19;
     }
-
     .shuRu {
-        width:calc(120% - 50px) ;
+        width: calc(120% - 50px);
         height: 38px;
         font-size: 1.1875rem;
     }
 }
 
 
-
-
-
-
-
-
-
-
 /* 图标 */
+
 .yingYong {
     padding-top: 58px;
     margin: 0 auto;
@@ -582,6 +540,7 @@ body {
     text-decoration: underline;
 }
 
+
 /* 工具 */
 
 .gongJv {
@@ -589,7 +548,6 @@ body {
     display: flex;
     flex-direction: row;
     margin: 48px auto;
-
 }
 
 .gong {
@@ -627,14 +585,15 @@ body {
 
 .gong:nth-child(4) {
     border: none;
-   
 }
 
 .gong:hover .wen {
     text-decoration: underline;
 }
 
+
 /* 音响 */
+
 .yingXiang {
     width: 980px;
     display: flex;
@@ -683,7 +642,9 @@ body {
     text-decoration: underline;
 }
 
+
 /* 设备 */
+
 .sheBei {
     width: 90%;
     display: flex;
@@ -713,7 +674,7 @@ body {
 }
 
 .she p {
-    margin: 16px 0 0 0 ;
+    margin: 16px 0 0 0;
     font-size: 20px;
     line-height: 1.4545454545;
     font-weight: 300;
@@ -729,21 +690,6 @@ body {
 .she div:hover .wen {
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .xian {
     border-bottom: 1px solid #dedede;
@@ -778,7 +724,7 @@ body {
 .tu {
     height: 32px;
     padding-top: 15px;
-    width: 100%; 
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -799,7 +745,7 @@ body {
 
 .biao svg {
     margin-right: 11px;
-} 
+}
 
 .biao {
     padding: 17px 0;
@@ -818,9 +764,9 @@ body {
     display: flex;
     flex-direction: row;
     padding-bottom: 25px;
-} 
+}
 
-.xuan{
+.xuan {
     width: 25%;
     overflow: hidden
 }
@@ -845,7 +791,7 @@ body {
     flex-direction: column;
 }
 
-.zhe >* {
+.zhe>* {
     cursor: pointer;
     display: inline-block;
     height: 21px;
@@ -892,13 +838,13 @@ body {
     line-height: 20px;
     width: auto;
     color: #888;
-    margin-right: 26px; 
+    margin-right: 26px;
     text-decoration: none !important;
     cursor: text !important;
 }
 
 .w {
-    color: #555; 
+    color: #555;
     padding-right: 12px;
     margin-right: 10px;
     border-right: 1px solid #dedede;
@@ -915,68 +861,58 @@ body {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 1050px) {
     .biao {
         width: 100%;
     }
-
     .xuanZhe {
         width: 100%;
     }
-
     .shangBiao {
         width: 100%;
     }
-
     .bangZhu {
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
     .qian {
         flex-direction: column;
     }
 }
 
-@media only screen and (max-width: 766px){
+@media only screen and (max-width: 766px) {
     .xuanZhe {
         flex-direction: column;
     }
-
     .xuan {
         width: 100%;
         border-bottom: 1px solid #dedede;
     }
-
     .xuan:nth-child(1) {
         border-top: 1px solid #dedede;
     }
-
     .shangBiao {
         border-top: none;
         flex-direction: column-reverse;
         align-items: flex-start;
     }
-
     .zhe {
         width: 100%;
         height: 0;
         transition: height 0.2s ease-in;
     }
-
-    .zhe >* {
+    .zhe>* {
         height: 30px;
         line-height: 30px;
         width: 100%;
         padding-left: 14px;
         color: #888;
     }
-
     .zhe li:hover {
         text-decoration: underline;
     }
-
     .zheTou {
         font-weight: initial;
         display: flex;
@@ -988,55 +924,32 @@ body {
         width: 100%;
         color: #888;
     }
-
     .jiaHao {
         display: block;
     }
-
     .change .jiaHao {
-        transform:rotate(45deg);
+        transform: rotate(45deg);
     }
-
     .zheTou:hover .jiaHao {
         color: black;
     }
-
     .change {
         color: #000;
         font-weight: 600;
     }
-
-    .change + .zhe {
+    .change+.zhe {
         height: 210px;
     }
-
     .qian {
         padding-top: 13px;
     }
-
     .hou {
         color: #888;
     }
-
     .qian div {
         color: #888;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .fuWu {
     width: 817px;
@@ -1075,21 +988,19 @@ body {
     text-decoration: underline;
 }
 
-@media only screen and (max-width:1050px){
+@media only screen and (max-width:1050px) {
     .fuWu {
         width: 692px;
     }
 }
 
-@media only screen and (max-width: 766px){
+@media only screen and (max-width: 766px) {
     .fuWu {
         box-sizing: border-box;
         padding: 0 30px;
         width: 100%;
     }
 }
-
-
 
 .zhaPian {
     padding: 48px 0;
@@ -1128,30 +1039,26 @@ body {
     text-decoration: underline;
 }
 
-@media only screen and (max-width:1050px){
+@media only screen and (max-width:1050px) {
     .zhaPian {
         width: 692px;
         padding: 32px 0 48px;
     }
 }
 
-@media only screen and (max-width:766px){
-    .zhaPian{
+@media only screen and (max-width:766px) {
+    .zhaPian {
         width: 100%;
         padding: 32px 24px 48px;
         flex-direction: column;
     }
-
     .zhaPian img {
         margin: 0 auto;
     }
-
     .pian {
-        padding: 0  ;
+        padding: 0;
     }
 }
-
-
 
 .hua {
     box-sizing: border-box;
@@ -1186,25 +1093,23 @@ body {
     text-decoration: underline;
 }
 
-@media only screen and (max-width:1050px){
+@media only screen and (max-width:1050px) {
     .hua {
         width: 692px;
     }
 }
 
-@media only screen and (max-width:766px){
+@media only screen and (max-width:766px) {
     .hua {
         padding: 0 24px;
         width: 100%;
     }
 }
 
-
-
 .pinGuo {
     box-sizing: border-box;
     width: 817px;
-    margin: 42px auto ;
+    margin: 42px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1214,7 +1119,6 @@ body {
     width: 400px;
     height: 200px;
 }
-
 
 .guo h3 {
     font-size: 32px;
@@ -1240,47 +1144,38 @@ body {
     text-decoration: underline;
 }
 
-@media only screen and (max-width:1050px){
+@media only screen and (max-width:1050px) {
     .pinGuo {
         width: 692px;
     }
-
     .pinGuo img {
         width: 228px;
         height: 114px;
     }
-
     .guo h3 {
         font-size: 28px;
         line-height: 28px;
     }
-
     .guo p {
         font-size: 16px;
     }
 }
 
-@media only screen and (max-width:766px){
-    .pinGuo{
+@media only screen and (max-width:766px) {
+    .pinGuo {
         width: 100%;
         padding: 0 34px;
         flex-direction: column;
     }
-
     .pinGuo img {
         margin: auto;
     }
-
-    .guo h3{
+    .guo h3 {
         font-size: 24px;
         line-height: 24px;
         width: fit-content;
     }
 }
-
-
-
-
 
 .computer {
     width: 100%;
@@ -1322,55 +1217,40 @@ body {
     text-decoration: underline;
 }
 
-@media only screen and (max-width:1050px){
+@media only screen and (max-width:1050px) {
     .nao {
         width: 692px;
     }
-
     .nao h3 {
         font-size: 34px;
     }
-
     .computer {
         height: 343px;
     }
 }
 
-@media only screen and (max-width:766px){
+@media only screen and (max-width:766px) {
     .nao {
         width: 100%;
         padding: 0 30px;
     }
 }
 
-@media only screen and (max-width:710px){
+@media only screen and (max-width:710px) {
     .computer {
-        background-image:url(https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp-hero-banner-getsupport.image.small_2x.jpg);
+        background-image: url(https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp-hero-banner-getsupport.image.small_2x.jpg);
         height: 320px;
         margin-bottom: 160px;
     }
-    
     .nao {
         position: relative;
         top: 240px;
         color: black;
     }
-
     .nao h3 {
         font-size: 28px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 1050px) {
     /* 应用的响应 */
@@ -1380,113 +1260,93 @@ body {
     .yingYong {
         width: 100%;
     }
-
     /* 工具的响应 */
     .gongJv {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-
     .gong {
         height: 78px;
         padding: 30px 30px 31px 30px;
         width: 584px;
         margin: 0 24px;
     }
-
     .gong:nth-child(1) div {
         width: auto;
     }
-    
     .gong {
         border: none;
         border-bottom: 1px solid #dedede;
     }
-
     .gong:nth-child(4) {
         border: none;
     }
-
     /* 音响的响应 */
     .yingXiang {
         flex-direction: column;
         align-items: center;
         width: 692px;
     }
-
     .xiang {
         width: 692px;
         height: 150px;
     }
-    
     .xiang:nth-child(1) {
         padding-right: 0;
         flex-direction: row;
     }
-
     .xiang:nth-child(2) {
         padding-left: 0;
         flex-direction: row;
         margin-top: 32px;
     }
-
     .xiang img {
         width: 228px;
         height: 133px;
     }
-
     .zi {
         padding-left: 24px;
     }
-
     /* 设备的响应 */
     .sheBei {
         flex-direction: column;
         align-items: center;
     }
-
     .she {
         width: 692px;
         align-items: center;
     }
-
     .she h3 {
         font-size: 32px;
         margin-top: 30px;
     }
-
     .she p {
         text-align: center;
     }
 }
 
-
-@media only screen and (max-width: 735px){
+@media only screen and (max-width: 735px) {
     /* 应用 */
     .yong {
         width: 50%;
     }
-
     /* 工具 */
     .gong {
         width: 75%;
     }
-
     /* 音响 */
     .yingXiang {
-        width:calc(100% - 66px); 
+        width: calc(100% - 66px);
         margin-left: 33px;
         margin-right: 33px;
     }
-
     .xiang:nth-child(1) {
         height: auto;
         width: 100%;
         padding-right: 0;
         flex-direction: column;
     }
-
     .xiang:nth-child(2) {
         height: auto;
         width: 100%;
@@ -1494,22 +1354,19 @@ body {
         flex-direction: column;
         margin-top: 32px;
     }
-
     .xiang img {
         width: 240px;
         height: 140px;
         margin-bottom: 17px;
     }
-
-    /* 设备 */  
-
+    /* 设备 */
     .she {
         max-width: 100%;
         min-width: 293px;
     }
 }
 
-@media only screen and (max-width: 400px) {   
+@media only screen and (max-width: 400px) {
     /* 设备的图片变化 */
     .sheBei img {
         max-width: 100%;
