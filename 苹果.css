@@ -760,7 +760,6 @@ body {
 }
 
 .shiPing {
-    width: 980px;
     height: 125px;
     display: flex;
     flex-direction: column;
